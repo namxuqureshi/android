@@ -1,0 +1,17 @@
+<!-- [ Mirror metadata ] generatedAt: 1477063883956 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/custom_replies_layout">
+        <!-- TextView Examples:
+        <reply_owner_name text="@string/string_resource" />
+        <reply_owner_name text="Text literal" textSize="14sp" /> -->
+        <reply_owner_name />
+        <reply_main_time />
+        <reply_main_msg />
+        <reply_main_viewBy />
+    </_content>
+</screen>

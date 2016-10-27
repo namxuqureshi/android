@@ -1,0 +1,46 @@
+<!-- [ Mirror metadata ] generatedAt: 1477063883635 -->
+<!-- Generated screen file. Fill the id tags below with content with
+which to populate your previewed layout. For a complete specification
+of sample data, please see http://jimulabs.com/sample-data-specifications/ 
+
+Valid attributes on <screen> tag: theme="@style/someTheme" inEditMode="false" overlay="@drawable/mockup" -->
+<screen>
+    <_content layout="@layout/activity_message_main">
+        <!-- ImageView Examples:
+        <backBtnImg src="@drawable/image_resource" />
+        <backBtnImg src="relative_path/image.jpg" /> -->
+        <backBtnImg />
+        <!-- TextView Examples:
+        <message_owner_name text="@string/string_resource" />
+        <message_owner_name text="Text literal" textSize="14sp" /> -->
+        <message_owner_name />
+        <message_main_time />
+        <message_main_msg />
+        <message_main_viewBy />
+        <reply_list>
+            <items layout="@android:layout/simple_list_item_1" >
+                <_item>
+                    <text1>Apple</text1>
+                </_item>
+                <_item>
+                    <text1>Orange</text1>
+                </_item>
+                <_item>
+                    <text1>Pear</text1>
+                </_item>
+                <_item>
+                    <text1>Grapefruit</text1>
+                </_item>
+                <_item>
+                    <text1>Banana</text1>
+                </_item>
+                <_item>
+                    <text1>Lemon</text1>
+                </_item>
+                <_item>
+                    <text1>Carrot</text1>
+                </_item>
+            </items>
+                </reply_list>
+    </_content>
+</screen>

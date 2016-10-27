@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/nav_search"
+
+            android:icon="@drawable/ic_find_in_page_black_24dp"
+            android:title="Search"/>
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Scan"/>
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="Message"/>
+        <item
+            android:id="@+id/nav_friend_list"
+            android:icon="@drawable/ic_recent_actors_black_24dp"
+            android:title="Friend List"/>
+        <item
+            android:id="@+id/nav_groups"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Groups"/>
+        <item
+            android:id="@+id/nav_requests"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Requests"/>
+        <item
+            android:id="@+id/nav_requests_friends"
+            android:icon="@drawable/ic_group_add_black_24dp"
+            android:title="Request Friend"/>
+
+
+    </group>
+
+    <item android:title="For Logout">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Logout"/>
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500px"
+    android:layout_height="200px"
+    android:layout_alignWithParentIfMissing="true"
+    android:background="#842e62"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="#842e62"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="100dp"
+
+            android:layout_height="30dp"
+            android:background="@drawable/roundedbutton"
+            android:clickable="true"
+            android:text="OK"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dialogButtonCANCEL"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/roundedbutton"
+            android:clickable="true"
+            android:text="Cancel"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

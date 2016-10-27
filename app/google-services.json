@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "748739241347",
+    "firebase_url": "https://firstfirebaseapp-fb06e.firebaseio.com",
+    "project_id": "firstfirebaseapp-fb06e",
+    "storage_bucket": "firstfirebaseapp-fb06e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748739241347:android:60a5c11c09e4adb8",
+        "android_client_info": {
+          "package_name": "com.example.n_u.firstfirebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748739241347-qvr8j3oeh467a3k8j9915u0bs5sv2iq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.n_u.firstfirebaseapp",
+            "certificate_hash": "83F4DCE21B879E8CF60EABF5EAE3F85080074C7C"
+          }
+        },
+        {
+          "client_id": "748739241347-dvf8c93gnli2b88sr68padajus5d84i3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUuQSCTCKLmIHrOtMXklKUChneNwD5Eqc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748739241347-dvf8c93gnli2b88sr68padajus5d84i3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748739241347:android:52e9dc8d5018610f",
+        "android_client_info": {
+          "package_name": "com.example.dev.officebox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748739241347-8v57hn2vuvn2q5819q36nsjq2695ik8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dev.officebox",
+            "certificate_hash": "527C16F7648787305F0DE6EBEFAAD76AE7999F3E"
+          }
+        },
+        {
+          "client_id": "748739241347-dvf8c93gnli2b88sr68padajus5d84i3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUuQSCTCKLmIHrOtMXklKUChneNwD5Eqc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748739241347-dvf8c93gnli2b88sr68padajus5d84i3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

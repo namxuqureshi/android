@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="13dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/space" />
+
+        <TextView
+            android:id="@+id/message_name"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:layout_toRightOf="@+id/profile_image"
+            android:allowUndo="false"
+            android:fontFamily="@string/title_activity_tag"
+            android:text="Office"
+            android:textAllCaps="true"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tag_message"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/message_name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/message_name"
+            android:allowUndo="false"
+            android:fontFamily="@string/title_activity_tag"
+            android:text="Whats app boy and whats on ........"
+            android:textAllCaps="true"
+            android:textSize="12dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tag_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:allowUndo="false"
+            android:fontFamily="@string/title_activity_tag"
+            android:text="yesterday"
+            android:textAllCaps="true"
+            android:textSize="10dp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2caca"
+    tools:context=".ProfileTagActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/friends"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/tags"
+            android:layout_alignParentStart="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerInParent="false"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="17dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="#e46ab3"
+            android:elevation="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:hapticFeedbackEnabled="true"
+            android:includeFontPadding="true"
+            android:lineSpacingExtra="18dp"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:maxLines="1"
+            android:padding="25dp"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:saveEnabled="false"
+            android:scrollHorizontally="false"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:soundEffectsEnabled="false"
+            android:text="friend"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/groups"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerInParent="false"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="#fa7fc6"
+            android:elevation="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:hapticFeedbackEnabled="true"
+            android:includeFontPadding="true"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:maxLines="1"
+            android:padding="25dp"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:saveEnabled="false"
+            android:scrollHorizontally="false"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:soundEffectsEnabled="false"
+            android:text="groups"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            tools:targetApi="lollipop"
+            android:layout_marginStart="33dp"
+            android:layout_alignBaseline="@+id/friends"
+            android:layout_alignBottom="@+id/friends"
+            android:layout_toEndOf="@+id/friends" />
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="350px"
+            tools:ignore="PxUsage,RtlHardcoded"
+            android:layout_above="@+id/groups"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:text="Name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:ignore="HardcodedText" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_above="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/space" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tags"
+            style="@android:style/Widget.Material.Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerInParent="false"
+            android:layout_marginStart="81dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="#cc93b5"
+            android:elevation="24dp"
+            android:hapticFeedbackEnabled="true"
+            android:includeFontPadding="true"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:maxLines="1"
+            android:padding="25dp"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:saveEnabled="false"
+            android:scrollHorizontally="false"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:soundEffectsEnabled="false"
+            android:text="tags"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            tools:ignore="HardcodedText"
+            tools:targetApi="lollipop"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/friends" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
