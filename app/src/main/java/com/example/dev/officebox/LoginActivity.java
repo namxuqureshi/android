@@ -51,18 +51,19 @@ LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(getApplicationContext());
         try {
+            Log.v("as", "asd".toString());
             PackageInfo info = getPackageManager().getPackageInfo(
                     "com.example.dev.officebox",
                     PackageManager.GET_SIGNATURES);
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());
-                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+                Log.v("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
             }
         } catch (PackageManager.NameNotFoundException e) {
-
+            Log.v("KeyHash:", e.toString());
         } catch (NoSuchAlgorithmException e) {
-
+            Log.v("KeyHash:", e.toString());
         }
         setContentView(R.layout.activity_login);
         email = (EditText) findViewById(R.id.input_email);
@@ -136,8 +137,8 @@ LoginActivity extends AppCompatActivity {
 
             @Override
             public void onError(FacebookException error) {
-                Toast.makeText(LoginActivity.this, "User: Error ", Toast.LENGTH_LONG).show();
-                Log.d(TAG, "facebook:onError", error);
+                Toast.makeText(LoginActivity.this, "User: Error " , Toast.LENGTH_LONG).show();
+                Log.e(TAG, "facebook:onError", error);
                 // ...
             }
         });
@@ -181,7 +182,7 @@ LoginActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 Intent intent = new Intent(LoginActivity.this, TagActivity.class);
-                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                  intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                 startActivity(intent);
                                 finish();
                             }
