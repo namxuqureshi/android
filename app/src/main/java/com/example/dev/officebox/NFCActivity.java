@@ -1,5 +1,6 @@
 package com.example.dev.officebox;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -35,6 +36,7 @@ public class NFCActivity extends Activity {
 
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +49,7 @@ public class NFCActivity extends Activity {
             // Stop here, we definitely need NFC
             Toast.makeText(this, "This device doesn't support NFC.", Toast.LENGTH_LONG).show();
             finish();
-//            return;
+            return;
         }
         if (!mNfcAdapter.isEnabled()) {
             Toast.makeText(getApplicationContext(), "Please activate NFC and press Back to return to the application!", Toast.LENGTH_LONG).show();
@@ -62,13 +64,6 @@ public class NFCActivity extends Activity {
 
     @Override
     protected void onNewIntent(final Intent intent) {
-        /**
-         * This method gets called, when a new Intent gets associated with the current activity instance.
-         * Instead of creating a new activity, onNewIntent will be called. For more information have a look
-         * at the documentation.
-         *
-         * In our case this method gets called, when the user attaches a Tag to the device.
-         */
         handleIntent(intent);
     }
 
@@ -92,7 +87,7 @@ public class NFCActivity extends Activity {
             Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
             byte[] a = tag.getId();
             String ab = bytesToHex(a);
-//            Toast.makeText(this, ab, Toast.LENGTH_SHORT).show();
+
             final Intent i = new Intent(this, AddNewTagActivity.class);
             i.putExtra("TAG_ID", ab);
             startActivity(i);
@@ -141,10 +136,7 @@ public class NFCActivity extends Activity {
 
     @Override
     protected void onResume() {
-        /**
-         * It's important, that the activity is in the foreground (resumed). Otherwise
-         * an IllegalStateException is thrown.
-         */
+
         setupForegroundDispatch(this, mNfcAdapter);
         super.onResume();
 
@@ -153,19 +145,12 @@ public class NFCActivity extends Activity {
 
     @Override
     protected void onPause() {
-        /**
-         * Call this before onPause, otherwise an IllegalArgumentException is thrown as well.
-         */
+
         stopForegroundDispatch(this, mNfcAdapter);
 
         super.onPause();
     }
 
-    @Override
-    protected void onStop() {
-
-        super.onStop();
-    }
 
     public void goBack(final View view) {
         super.onBackPressed();
