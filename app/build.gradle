@@ -3,7 +3,9 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     buildToolsVersion "24.0.3"
-
+    repositories {
+        mavenCentral()
+    }
     defaultConfig {
         applicationId "com.example.dev.officebox"
         minSdkVersion 20
@@ -29,13 +31,9 @@ dependencies {
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'com.android.support:support-v4:25.0.0'
     compile 'com.facebook.android:facebook-android-sdk:4.16.1'
-    compile 'com.parse:parsefacebookutils-v4-android:1.10.3@aar'
-    compile 'com.parse:parse-android:1.13.0'
-    compile 'com.google.firebase:firebase-auth:9.6.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
     testCompile 'junit:junit:4.12'
-    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+
 }
 
 
