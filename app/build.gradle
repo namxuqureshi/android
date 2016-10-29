@@ -8,7 +8,7 @@ android {
     }
     defaultConfig {
         applicationId "com.example.dev.officebox"
-        minSdkVersion 20
+        minSdkVersion 19
         targetSdkVersion 25
         maxSdkVersion 24
         versionCode 1
@@ -37,4 +37,3 @@ dependencies {
 }
 
 
-apply plugin: 'com.google.gms.google-services'
