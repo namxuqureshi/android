@@ -8,7 +8,7 @@ android {
     }
     defaultConfig {
         applicationId "com.example.dev.officebox"
-        minSdkVersion 20
+        minSdkVersion 19
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -33,3 +33,8 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     testCompile 'junit:junit:4.12'
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6c5fc6bb428408629ad73db25dfb0dfb5642cc76

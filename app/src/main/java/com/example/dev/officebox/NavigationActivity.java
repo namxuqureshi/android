@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.example.dev.officebox.helpers.Session;
+
 public class NavigationActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     protected String[] web = {
             "Google Plus",
@@ -64,6 +66,10 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
             //TODO
         } else if (id == R.id.nav_logout) {
             //TODO
+            Session.delPref("user", getApplicationContext());
+            Intent i = new Intent(this, LoginActivity.class);
+            startActivity(i);
+            finish();
 
         }
 
