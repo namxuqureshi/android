@@ -1,4 +1,4 @@
-package com.example.dev.officebox.Adapters;
+package com.example.dev.officebox.adapters;
 
 
 import android.app.Activity;
@@ -29,7 +29,7 @@ public class MessagesAdapter extends ArrayAdapter<String> {
         final LayoutInflater inflater = context.getLayoutInflater();
 //        final View rowView = inflater.inflate(R.layout.custom_message, null, true);
         if (rowView == null) {
-            rowView = inflater.inflate(R.layout.custom_message, null);
+            rowView = inflater.inflate(R.layout.custom_message, parent, false);
         }
         final TextView txtTitle = (TextView) rowView.findViewById(R.id.message_name);
 

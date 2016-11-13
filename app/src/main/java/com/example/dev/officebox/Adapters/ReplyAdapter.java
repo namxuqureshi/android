@@ -1,4 +1,4 @@
-package com.example.dev.officebox.Adapters;
+package com.example.dev.officebox.adapters;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
@@ -31,7 +31,7 @@ public class ReplyAdapter extends ArrayAdapter<String> {
         LayoutInflater inflater = context.getLayoutInflater();
 //        View rowView = inflater.inflate(R.layout.custom_replies_layout, null, true);
         if (rowView == null) {
-            rowView = inflater.inflate(R.layout.custom_replies_layout, null);
+            rowView = inflater.inflate(R.layout.custom_replies_layout, parent, false);
         }
         TextView txtTitle = (TextView) rowView.findViewById(R.id.reply_owner_name);
 

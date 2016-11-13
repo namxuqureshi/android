@@ -23,8 +23,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/friendCircleView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
@@ -47,8 +47,8 @@
                 android:textAllCaps="true"
                 android:textSize="20sp"
                 android:textStyle="normal|bold"
-                tools:targetApi="m"
-                tools:ignore="RelativeOverlap,RtlHardcoded" />
+                tools:ignore="RelativeOverlap,RtlHardcoded"
+                tools:targetApi="m" />
 
             <TextView
                 android:id="@+id/textView3"

@@ -8,7 +8,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_new_group">Add New Group</string>
-    <string name="titleInNavigate" >Office</string>
+    <string name="titleInNavigate">Office</string>
     <string name="label_google_sign_in">Firebase + Google Sign In</string>
     <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
 
@@ -66,4 +66,29 @@
     <string name="id_fmt">User ID: %s</string>
     <string name="email_fmt">Email: %s</string>
     <string name="office">Office</string>
+    <string name="for_logout">For Logout</string>
+    <string name="logout">Logout</string>
+    <string name="setting">Setting</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="scan">Scan</string>
+    <string name="message">Message</string>
+    <string name="friend_list">Friend List</string>
+    <string name="groups">Groups</string>
+    <string name="requests">Requests</string>
+    <string name="request_friend">Request Friend</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="phone">Phone</string>
+    <string name="register">Register</string>
+    <string name="already_exist_go_back">Already Exist !! Go Back</string>
+    <string name="name">Name</string>
+    <string name="touch_the_nfc_tag">Touch The NFC Tag!</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="go_btn">Go</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="office_virtue_navigation">Office Virtue Navigation</string>
 </resources>

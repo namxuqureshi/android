@@ -1,4 +1,4 @@
-package com.example.dev.officebox.Adapters;
+package com.example.dev.officebox.adapters;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
@@ -28,20 +28,36 @@ public class AddNewTagAdapter extends ArrayAdapter<Integer> {
 
     }
 
+    private static class ViewHolder {
+        ImageView imageView;
+
+        ViewHolder(View view) {
+            imageView = (ImageView) view.findViewById(R.id.grid_item_image);
+        }
+    }
+
     @NonNull
     @Override
     public View getView(int position, View rowView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
+
+        ViewHolder holder;
 //        View rowView = inflater.inflate(R.layout.grid_view, null, true);
 //        TextView txtTitle = (TextView) rowView.findViewById(R.id.tag_name);
         if (rowView == null) {
-            rowView = inflater.inflate(R.layout.grid_view, null);
+            rowView = inflater.inflate(R.layout.grid_view, parent, false);
+            holder = new ViewHolder(rowView);
+            rowView.setTag(holder);
+
+        } else {
+            holder = (ViewHolder) rowView.getTag();
+
         }
 
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.grid_item_image);
-//        txtTitle.setText(img[position]);
 
-        imageView.setImageResource(img[position]);
+//        ImageView imageView = (ImageView) rowView.findViewById(R.id.grid_item_image);
+
+        holder.imageView.setImageResource(img[position]);
         return rowView;
     }
 }

@@ -14,7 +14,7 @@ import okhttp3.RequestBody;
 public class Http {
 
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-    static OkHttpClient client = new OkHttpClient();
+    private static OkHttpClient client = new OkHttpClient();
 
     static public Call post(String url, String json, Callback callback) {
         RequestBody body = RequestBody.create(JSON, json);

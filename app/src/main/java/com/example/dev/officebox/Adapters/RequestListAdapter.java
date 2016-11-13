@@ -1,4 +1,4 @@
-package com.example.dev.officebox.Adapters;
+package com.example.dev.officebox.adapters;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
@@ -34,7 +34,7 @@ public class RequestListAdapter extends ArrayAdapter<String> {
         LayoutInflater inflater = context.getLayoutInflater();
 //        View rowView = inflater.inflate(R.layout.custom_requests, null, true);
         if (rowView == null) {
-            rowView = inflater.inflate(R.layout.custom_requests, null);
+            rowView = inflater.inflate(R.layout.custom_requests, parent, false);
         }
         TextView txtTitle = (TextView) rowView.findViewById(R.id.request_list);
 
